@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+a.active hr{
+    display: block;
+}
+
+*{
+    font-family: Outfit, Roboto;
+}
+button{
+    cursor: pointer;
+}
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+::-webkit-scrollbar{
+    display: none;
+}
+@media (max-width: 640px){
+    a.active {
+        background: linear-gradient(to right, #595959, #6f6c71);
+        color: white;
+        border-radius: 5px;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    /* Hover effect */
+    a.active:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Makes the shadow more prominent */
+        transform: translateY(-2px); /* Lifts the element slightly */
+    }
+}
